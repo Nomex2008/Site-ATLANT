@@ -5,6 +5,8 @@ html {
     font-size: 14px;
     font-style: normal;
     color: #18191F;
+
+    background-color: #fff;
 }
 .wrap {
     display: flex;
@@ -13,33 +15,117 @@ html {
     overflow: clip;
     min-height: 100%;
 }
+.container {
+    max-width: 1140px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
 
 /*main style*/
 .bigTitle {
     font-family: Manrope;
     font-size: 72px;
-    font-style: normal;
     font-weight: 800;
     line-height: 98px;
 }
 .title {
     font-family: Manrope;
     font-size: 48px;
-    font-style: normal;
     font-weight: 800;
     line-height: 64px;
 }
 .text {
     font-family: Manrope;
     font-size: 18px;
-    font-style: normal;
     font-weight: 400;
     line-height: 32px;
 }
 
 /*header*/
 .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+
+    z-index: 50;
+
+    min-height: 72px;
+    display: flex;
+    align-items: center;
+
+    background-color: #FFF;
+
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        max-width: 1110px;
+        width: 100%;
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+    }
+
+    &__textLogo {
+        padding-top: 6px;
+    }
+
+    &__nav {
+        display: flex;
+        column-gap: 32px;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        column-gap: 32px;
+    }
+
+    &__link {
+        color: #18191F;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 20px; /* 142.857% */
+    }
+    &__link:hover{
+        text-decoration: underline;
+    }
+
+    &__btn {
+        color:  #FFF;
+        text-align: center;
+        
+        font-weight: 700;
+        line-height: 20px; /* 142.857% */
+
+        background-color: #183181;
+        border: 1px solid #183181;
+        padding: 9px 12px;
+        border-radius: 8px;
+
+        display: flex;
+        padding: 10px 13px;
+        justify-content: center;
+        align-items: center;
+
+        transition: all .3s ease;
+    }
+    &__btn:hover{
+        background-color: #FFF;
+        color: #183181;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 1.0);
+    }
+    &__btn:active{
+        transform: translate(0px,1px);
+        box-shadow: 0px 0px 1px rgba(0, 0, 0, 1.0);
+    }
 }
+
 /*page*/
 .page {
     flex: 1 1 auto;
