@@ -159,4 +159,56 @@ html {
           flex: 1 1 auto;
 }
 
+.main {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url("../img/main/mainThoto.png") 100% 100% no-repeat, -webkit-gradient(linear, left top, left bottom, from(#D9E8EF), to(#EAF2F5));
+  background: url("../img/main/mainThoto.png") 100% 100% no-repeat, linear-gradient(180deg, #D9E8EF 0%, #EAF2F5 100%);
+}
+.main__title {
+  margin-bottom: 16px;
+  max-width: 196px;
+}
+.main__text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px; /* 177.778% */
+  max-width: 540px;
+  margin-bottom: 32px;
+}
+.main__project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.main__btn {
+  margin-right: 8px;
+  border-radius: 50%;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.main__btn:hover {
+  background-color: #FFF;
+}
+.main__line {
+  width: 80px;
+  height: 2px;
+  background: #18191F;
+  margin-right: 8px;
+}
+.main__project-text {
+  font-weight: 800;
+  line-height: 18px; /* 128.571% */
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
 /*footer*/

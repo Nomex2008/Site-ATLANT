@@ -130,6 +130,65 @@ html {
 .page {
     flex: 1 1 auto;
 }
+//main
+.main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url('../img/main/mainThoto.png') 100% 100% no-repeat, linear-gradient(180deg, #D9E8EF 0%, #EAF2F5 100%);
+
+    &__body {
+
+    }
+
+    &__content {
+        
+    }
+
+    &__title {
+        margin-bottom: 16px;
+        max-width: 196px;
+    }
+
+    &__text {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 32px; /* 177.778% */
+        max-width: 540px;
+
+        margin-bottom: 32px;
+    }
+
+    &__project {
+        display: flex;
+        align-items: center;
+    }
+
+    &__btn {
+        margin-right: 8px;
+        border-radius: 50%;
+        transition: all .3s ease;
+    }
+    &__btn:hover{
+        background-color: #FFF;
+    }
+
+    &__line {
+        width: 80px;
+        height: 2px;
+        background: #18191F;
+
+        margin-right: 8px;
+    }
+
+    &__project-text {
+        font-weight: 800;
+        line-height: 18px; /* 128.571% */
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+}
+
 /*footer*/
 .footer {
 }
