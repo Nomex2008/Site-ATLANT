@@ -171,11 +171,11 @@ html {
   background: url("../img/main/mainThoto.png") 100% 100% no-repeat, linear-gradient(180deg, #D9E8EF 0%, #EAF2F5 100%);
 }
 .main__title {
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
   max-width: 196px;
 }
 .main__text {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 400;
   line-height: 32px; /* 177.778% */
   max-width: 540px;
@@ -211,4 +211,27 @@ html {
   text-transform: uppercase;
 }
 
+/*info*/
+.info {
+  padding: 64px 0;
+}
+.info__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.info__item {
+  width: 23%;
+}
+.info__text {
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+}
+
 /*footer*/
+.footer {
+  background-color: #0B0D17;
+}

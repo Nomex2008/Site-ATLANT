@@ -146,12 +146,12 @@ html {
     }
 
     &__title {
-        margin-bottom: 16px;
+        margin-bottom: 1rem;
         max-width: 196px;
     }
 
     &__text {
-        font-size: 18px;
+        font-size: 1.125rem;
         font-weight: 400;
         line-height: 32px; /* 177.778% */
         max-width: 540px;
@@ -189,6 +189,30 @@ html {
     }
 }
 
+/*info*/
+.info {
+    padding: 64px 0;
+
+    &__body {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        width: 23%;
+    }
+
+    &__title {
+        
+    }
+
+    &__text {
+        font-weight: 400;
+        line-height: 26px; /* 162.5% */
+    }
+}
+
 /*footer*/
 .footer {
+    background-color: #0B0D17;
 }
