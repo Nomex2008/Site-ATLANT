@@ -1,0 +1,49 @@
+/*main*/
+body,
+html {
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    color: #18191F;
+}
+.wrap {
+    display: flex;
+    flex-direction: column;
+
+    overflow: clip;
+    min-height: 100%;
+}
+
+/*main style*/
+.bigTitle {
+    font-family: Manrope;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 98px;
+}
+.title {
+    font-family: Manrope;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 64px;
+}
+.text {
+    font-family: Manrope;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+/*header*/
+.header {
+}
+/*page*/
+.page {
+    flex: 1 1 auto;
+}
+/*footer*/
+.footer {
+}
