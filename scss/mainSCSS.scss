@@ -233,12 +233,32 @@ html {
 .wedo {
     padding: 32px 0;
 
+    position: relative;
+
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 60%;
+        z-index: 0;
+
+        width: 540px;
+        height: 540px;
+        flex-shrink: 0;
+
+        border-radius: 50%;
+        background: #CDCDCD;
+    }
+
     &__body {
         
     }
 
     &__title {
         margin-bottom: 48px;
+
+        position: relative;
+        z-index: 2;
     }
 
     &__list {
@@ -250,10 +270,13 @@ html {
     }
 
     &__item {
+        position: relative;
+        z-index: 2;
+
         width: 22%;
         min-height: 152px;
         max-height: 152px;
-        margin-left: 24px;
+        background-color: #FFF;
 
         border-radius: 8px;
         box-shadow: 0px 10px 20px 0px rgba(41, 41, 42, 0.2);
@@ -308,6 +331,8 @@ html {
         }
         &__item {
             width: 44%;
+
+            margin-left: 24px;
         }
         &__item-title {
             max-width: 80%;

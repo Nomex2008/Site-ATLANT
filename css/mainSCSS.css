@@ -251,9 +251,25 @@ html {
 /*wedo*/
 .wedo {
   padding: 32px 0;
+  position: relative;
+}
+.wedo:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 60%;
+  z-index: 0;
+  width: 540px;
+  height: 540px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  border-radius: 50%;
+  background: #CDCDCD;
 }
 .wedo__title {
   margin-bottom: 48px;
+  position: relative;
+  z-index: 2;
 }
 .wedo__list {
   display: -webkit-box;
@@ -267,10 +283,12 @@ html {
   row-gap: 64px;
 }
 .wedo__item {
+  position: relative;
+  z-index: 2;
   width: 22%;
   min-height: 152px;
   max-height: 152px;
-  margin-left: 24px;
+  background-color: #FFF;
   border-radius: 8px;
   -webkit-box-shadow: 0px 10px 20px 0px rgba(41, 41, 42, 0.2);
           box-shadow: 0px 10px 20px 0px rgba(41, 41, 42, 0.2);
@@ -324,6 +342,7 @@ html {
   }
   .wedo__item {
     width: 44%;
+    margin-left: 24px;
   }
   .wedo__item-title {
     max-width: 80%;
