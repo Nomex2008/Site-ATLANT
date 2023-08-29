@@ -49,6 +49,20 @@ html {
   line-height: 32px;
 }
 
+@media (max-width: 1100px) {
+  .title {
+    font-size: 38px;
+    font-weight: 800;
+    line-height: 44px;
+  }
+}
+@media (max-width: 360px) {
+  .title {
+    font-size: 34px;
+    font-weight: 800;
+    line-height: 38px;
+  }
+}
 /*header*/
 .header {
   position: fixed;
@@ -219,9 +233,12 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  row-gap: 10%;
 }
 .info__item {
   width: 23%;
@@ -231,6 +248,103 @@ html {
   line-height: 26px; /* 162.5% */
 }
 
+/*wedo*/
+.wedo {
+  padding: 32px 0;
+}
+.wedo__title {
+  margin-bottom: 48px;
+}
+.wedo__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  row-gap: 64px;
+}
+.wedo__item {
+  width: 22%;
+  min-height: 152px;
+  max-height: 152px;
+  margin-left: 24px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 10px 20px 0px rgba(41, 41, 42, 0.2);
+          box-shadow: 0px 10px 20px 0px rgba(41, 41, 42, 0.2);
+}
+.wedo__item-title {
+  max-width: 203px;
+  min-height: 64px;
+  margin: 24px auto 0;
+  color: #18191F;
+  /* Heading / H5 */
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px; /* 133.333% */
+  position: relative;
+  z-index: 2;
+}
+.wedo__item-title:after {
+  position: absolute;
+  top: 110%;
+  left: -5%;
+  content: "";
+  width: 32px;
+  height: 32px;
+  background: url("../img/wedo/mini1.svg") no-repeat;
+}
+.wedo__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-transform: translate(0px, -40px);
+          transform: translate(0px, -40px);
+}
+.wedo__img img {
+  position: relative;
+  z-index: 1;
+}
+
+/*madia for wedo*/
+@media (max-width: 1100px) {
+  /*wedo*/
+  .wedo__title {
+    margin-bottom: 38px;
+  }
+  .wedo__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .wedo__item {
+    width: 44%;
+  }
+  .wedo__item-title {
+    max-width: 80%;
+  }
+  .wedo__item-title:after {
+    top: 110%;
+    left: 0;
+  }
+}
+@media (max-width: 600px) {
+  /*wedo*/
+  .wedo__title {
+    margin-bottom: 24px;
+  }
+  .wedo__item {
+    width: 100%;
+  }
+  .wedo__item-title {
+    max-width: 80%;
+  }
+}
 /*footer*/
 .footer {
   background-color: #0B0D17;
