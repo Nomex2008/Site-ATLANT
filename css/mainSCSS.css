@@ -364,6 +364,16 @@ html {
     max-width: 80%;
   }
 }
+/*order*/
+.order {
+  padding: 152px 0 31px 0;
+}
+.order__img img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
 /*footer*/
 .footer {
   background-color: #0B0D17;

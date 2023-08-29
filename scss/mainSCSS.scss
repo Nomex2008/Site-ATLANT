@@ -358,6 +358,19 @@ html {
     }
 }
 
+/*order*/
+.order {
+
+    padding: 152px 0 31px 0;
+
+    &__img img{
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
 
 /*footer*/
 .footer {
