@@ -374,6 +374,187 @@ html {
   height: auto;
 }
 
+/*project*/
+.project {
+  padding: 80px 0 71px;
+}
+.project__title {
+  padding-bottom: 48px;
+}
+.project__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  row-gap: 80px;
+}
+.project__item {
+  width: 45%;
+}
+.project__item-title {
+  color: #18191F;
+  /* Heading / H4 */
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 40px;
+}
+.project__item-title span {
+  color: #18191F;
+  /* Heading / H4 */
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 40px; /* 142.857% */
+}
+.project__item-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  border-radius: 8px;
+  margin-top: 24px;
+  margin-bottom: 35px;
+}
+.project__item-img img {
+  max-width: 100%;
+  height: 375px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
+}
+.project__item-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.project__item-month {
+  color: #18191F;
+  /* Others /Capitalised */
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 18px; /* 128.571% */
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.project__item-btn {
+  color: #FFF;
+  text-align: center;
+  /* Label / Medium Label */
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px; /* 142.857% */
+  border-radius: 100px;
+  background: #183181;
+  padding: 10px 26px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.project__item-btn:hover {
+  background-color: #FFF;
+  color: #183181;
+  -webkit-box-shadow: 0px 1px 1px rgb(0, 0, 0);
+          box-shadow: 0px 1px 1px rgb(0, 0, 0);
+}
+.project__item-btn:active {
+  -webkit-transform: translate(0px, 1px);
+          transform: translate(0px, 1px);
+  -webkit-box-shadow: 0px 0px 1px rgb(0, 0, 0);
+          box-shadow: 0px 0px 1px rgb(0, 0, 0);
+}
+.project__btn-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 70px;
+}
+.project__btn {
+  display: block;
+  padding: 10px 12px;
+  border-radius: 100px;
+  background: #183181;
+  color: #FFF;
+  text-align: center;
+  /* Label / Medium Label */
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px; /* 142.857% */
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.project__btn:hover {
+  background-color: #FFF;
+  color: #183181;
+  -webkit-box-shadow: 0px 1px 1px rgb(0, 0, 0);
+          box-shadow: 0px 1px 1px rgb(0, 0, 0);
+}
+.project__btn:active {
+  -webkit-transform: translate(0px, 1px);
+          transform: translate(0px, 1px);
+  -webkit-box-shadow: 0px 0px 1px rgb(0, 0, 0);
+          box-shadow: 0px 0px 1px rgb(0, 0, 0);
+}
+
+/*madia for project*/
+@media (max-width: 700px) {
+  /*project*/
+  .project__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    row-gap: 70px;
+  }
+  .project__title {
+    padding-bottom: 38px;
+  }
+  .project__item {
+    width: 76%;
+  }
+  .project__btn-container {
+    margin-top: 60px;
+  }
+}
+@media (max-width: 500px) {
+  /*project*/
+  .project__list {
+    row-gap: 60px;
+  }
+  .project__item {
+    width: 100%;
+  }
+  .project__title {
+    padding-bottom: 30px;
+  }
+  .project__btn-container {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 360px) {
+  /*project*/
+  .project__item-title {
+    font-size: 20px;
+  }
+  .project__item-title span {
+    font-size: 20px;
+  }
+}
 /*footer*/
 .footer {
   background-color: #0B0D17;
