@@ -49,6 +49,7 @@ html {
   line-height: 32px;
 }
 
+/*adaptive for class*/
 @media (max-width: 1100px) {
   .bigTitle {
     font-size: 62px;
@@ -174,6 +175,7 @@ html {
           box-shadow: 0px 0px 1px rgb(0, 0, 0);
 }
 
+/*adaptive for header*/
 @media (max-width: 1000px) {
   .header__nav {
     display: none;
@@ -238,12 +240,14 @@ html {
   text-transform: uppercase;
 }
 
+/*adaptive for main*/
 @media (max-width: 1000px) {
   .main {
     background: url("none") 100% 100% no-repeat, -webkit-gradient(linear, left top, left bottom, from(#D9E8EF), to(#EAF2F5));
     background: url("none") 100% 100% no-repeat, linear-gradient(180deg, #D9E8EF 0%, #EAF2F5 100%);
   }
 }
+/*title height*/
 @media (max-height: 440px) {
   .main__title {
     margin-top: 10%;
@@ -626,6 +630,84 @@ html {
     font-size: 20px;
   }
 }
+/*about*/
+.about__body {
+  min-height: 540px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.about__img {
+  width: 55%;
+  min-width: 55%;
+  position: relative;
+}
+.about__img img {
+  max-width: 100%;
+  height: auto;
+  -webkit-transform: translate(-40px, 0);
+          transform: translate(-40px, 0);
+}
+.about__contain {
+  width: 45%;
+  height: 100%;
+}
+.about__content {
+  margin: 25% 0 0;
+  max-width: 444px;
+}
+.about__subTitle {
+  color: #183181;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 18px; /* 128.571% */
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.about__title {
+  color: #18191F;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 54px; /* 135% */
+}
+.about__text {
+  margin: 32px 0;
+}
+.about__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 8px;
+     -moz-column-gap: 8px;
+          column-gap: 8px;
+  max-width: 50px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.about__link-text {
+  color: #183181;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px; /* 150% */
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.about__link-img {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.about__link:hover .about__link-text {
+  color: #5c7ef1;
+}
+.about__link:hover .about__link-img {
+  -webkit-transform: translate(5px, 0);
+          transform: translate(5px, 0);
+}
+
 /*footer*/
 .footer {
   background-color: #0B0D17;
