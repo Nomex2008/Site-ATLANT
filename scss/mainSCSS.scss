@@ -41,6 +41,7 @@ html {
     font-weight: 400;
     line-height: 32px;
 }
+/*adaptive for class*/
 @media (max-width: 1100px){
     .bigTitle {
         font-size: 62px;
@@ -147,6 +148,7 @@ html {
         box-shadow: 0px 0px 1px rgba(0, 0, 0, 1.0);
     }
 }
+/*adaptive for header*/
 @media (max-width: 1000px) {
     .header {
 
@@ -218,11 +220,13 @@ html {
         text-transform: uppercase;
     }
 }
+/*adaptive for main*/
 @media (max-width: 1000px) {
     .main {
         background: url('none') 100% 100% no-repeat, linear-gradient(180deg, #D9E8EF 0%, #EAF2F5 100%);
     }
 }
+/*title height*/
 @media (max-height: 440px) {
     .main {
         &__title {
