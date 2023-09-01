@@ -1292,5 +1292,129 @@ html {
 }
 /*footer*/
 .footer {
-    background-color: #0B0D17;
+    background: #0B0D17;
+    color: #D9DBE1;
+
+    padding: 64px 0;
+
+    &__body {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        column-gap: 24px;
+    }
+
+    &__content {
+        font-weight: 400;
+        line-height: 24px; /* 171.429% */
+    }
+
+    &__content-maxtext {
+        margin-bottom: 8px;
+    }
+
+    &__content-text {
+        margin-bottom: 40px;
+    }
+
+    &__social {
+        display: flex;
+        gap: 16px;
+    }
+
+    &__img {
+        transform: scale(1);
+        transition: all .3s ease;
+    }
+    &__img:hover {
+        opacity: .8;
+        transform: scale(1.1);
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        width: 60%;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__item-title {
+        padding-bottom: 24px;
+
+        color: #FFF;
+
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 30px; /* 150% */
+    }
+
+    &__item-text {
+        margin-bottom: 12px;
+
+        color: #D9DBE1;
+
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px; /* 162.5% */
+
+        position: relative;
+    }
+
+
+    &__email input{
+        padding: 9px 32px 8px 12px;
+        width: 246px;
+
+        border-radius: 8px;
+        opacity: 0.2;
+        background: #FFF;
+
+        transition: all .3s;
+    }
+    &__email input:hover{
+        opacity: 0.4;
+    }
+    &__cont{
+        position: relative;
+    }
+    &__cont::after{
+        content: '';
+        width: 18px;
+        height: 18px;
+        background: url('../img/footer/send.svg') no-repeat;
+
+        position: absolute;
+        top: 10px;
+        right: 11px;
+    }
+}
+/*madia for project*/
+@media (max-width: 1000px) {
+    /*footer*/
+    .footer {
+        &__body {
+            row-gap: 32px;
+        }
+        &__content {
+            order: 2;
+        }
+        &__list {
+            width: 100%;
+            order: 1;
+        }
+    }
+}
+@media (max-width: 750px) {
+    /*footer*/
+    .footer {
+        &__list {
+            flex-wrap: wrap;
+            justify-content: start;
+            gap: 30px;
+        }
+    }
 }
