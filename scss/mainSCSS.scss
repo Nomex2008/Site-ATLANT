@@ -1573,6 +1573,9 @@ html {
 
         position: relative;
     }
+    &__item-text:hover {
+        text-decoration: underline;
+    }
 
 
     &__email input{
