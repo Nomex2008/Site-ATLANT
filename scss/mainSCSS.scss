@@ -162,6 +162,44 @@ html {
         transform: translate(0px,1px);
         box-shadow: 0px 0px 1px rgba(0, 0, 0, 1.0);
     }
+
+    &__burger{
+        height: 20px;
+        width: 40px;
+        position: relative;
+
+        cursor: pointer;
+        
+        display: none;
+    }
+    &__burger::before,
+    &__burger::after{
+        content: '';
+        position: absolute;
+        display: block;
+        left: 0;
+
+        width: 40px;
+        height: 3px;
+        background-color: #183181;
+    }
+    &__burger::before {
+        top: 0;
+    }
+    &__burger::after {
+        top: 100%;
+    }
+    &__burger span{
+        position: absolute;
+        display: block;
+        left: 0;
+        top: 50%;
+
+        width: 40px;
+        height: 3px;
+        background-color: #183181;
+    }
+
 }
 /*adaptive for header*/
 @media (max-width: 1000px) {
