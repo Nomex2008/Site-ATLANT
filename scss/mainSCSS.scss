@@ -8,6 +8,10 @@ html {
 
     background-color: #fff;
 }
+/*active*/
+body.active{
+    overflow: clip;
+}
 .wrap {
     display: flex;
     flex-direction: column;
@@ -107,10 +111,16 @@ html {
     &__logo {
         display: flex;
         align-items: center;
+
+        position: relative;
+        z-index: 1;
     }
 
     &__textLogo {
         padding-top: 6px;
+
+        position: relative;
+        z-index: 1;
     }
 
     &__nav {
@@ -182,6 +192,8 @@ html {
         width: 40px;
         height: 3px;
         background-color: #183181;
+
+        transition: all .3s ease;
     }
     &__burger::before {
         top: 0;
@@ -198,15 +210,73 @@ html {
         width: 40px;
         height: 3px;
         background-color: #183181;
+
+        transition: all .3s ease;
     }
 
+    /*active*/
+    &__burger.active::before{
+        top: 8px;
+        transform: rotate(-45deg);
+    }
+    &__burger.active::after{
+        top: 8px;
+        transform: rotate(45deg);
+    }
+    &__burger.active span{
+        left: 50%;
+        width: 0;
+    }
 }
+
 /*adaptive for header*/
 @media (max-width: 1000px) {
     .header {
-
         &__nav {
-            display: none;
+            overflow: scroll;
+            display: inline-block;
+            position: fixed;
+            
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            top:0;
+            left: 100%;
+            
+            z-index: 0;
+
+            background-color: #fff;
+
+            height: 100vh;
+            width: 100%;
+
+            transition: all 1s ease;
+
+            row-gap: 40px;
+        }
+        &__nav.active {
+            top: 0;
+            left: -.05%;
+        }
+        &__list{
+            flex-direction: column;
+
+            row-gap: 25px;
+        }
+        &__burger{
+            display: block;
+        }
+        &__link {
+            font-size: 25px;
+            line-height: 25px; /* 142.857% */
+            text-decoration: underline;
+        }
+        &__btn {
+            font-size: 25px;
+            line-height: 25px; /* 142.857% */
+
+            padding: 12px 26px;
         }
     }
 }
@@ -374,6 +444,9 @@ html {
         &__project-text {
             line-height: 14px; /* 128.571% */
         }
+    }
+    .header__nav {
+        overflow: scroll;
     }
 }
 /*title height*/
