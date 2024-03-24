@@ -8,7 +8,6 @@ burger.onclick = () => {
     console.log(11)
 }
 
-// Плавна прокрутка до елемента при кліці на посилання з класом header__link
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();

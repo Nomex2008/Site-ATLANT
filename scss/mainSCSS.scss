@@ -1805,7 +1805,7 @@ body.active{
     }
 
 
-    &__email input{
+    &__form{
         padding: 9px 32px 8px 12px;
         width: 246px;
 
@@ -1814,18 +1814,18 @@ body.active{
         background: #FFF;
 
         transition: all .3s;
+
+        position: relative;
     }
-    &__email input:hover{
+    &__form:hover{
         opacity: 0.4;
     }
     &__cont{
         position: relative;
     }
-    &__cont::after{
-        content: '';
+    &__btn {
         width: 18px;
         height: 18px;
-        background: url('../img/footer/send.svg') no-repeat;
 
         position: absolute;
         top: 10px;
