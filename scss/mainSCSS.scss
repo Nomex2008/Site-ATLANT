@@ -519,7 +519,7 @@ body.active{
 
 /*wedo*/
 .wedo {
-    padding: 32px 0;
+    padding: 60px 0;
 
     position: relative;
 
@@ -1787,9 +1787,11 @@ body.active{
         line-height: 30px; /* 150% */
     }
 
-    &__item-text {
-        margin-bottom: 12px;
+    &__item-info {
+        padding-bottom: 12px;
+    }
 
+    &__item-text {
         color: #D9DBE1;
 
         font-size: 16px;
